@@ -7,6 +7,8 @@ import { ComboComponent } from './combo/combo.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RadiofieldComponent } from './radiofield/radiofield.component';
+import { TextfieldComponent } from './textfield/textfield.component';
+import { TextareaComponent } from './textarea/textarea.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RadiofieldComponent } from './radiofield/radiofield.component';
     ComboComponent,
     HeaderComponent,
     FooterComponent,
-    RadiofieldComponent
+    RadiofieldComponent,
+    TextfieldComponent,
+    TextareaComponent
   ],
   imports: [
     BrowserModule
