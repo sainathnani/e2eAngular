@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RadiofieldComponent } from './radiofield/radiofield.component';
 import { TextfieldComponent } from './textfield/textfield.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TextareaComponent } from './textarea/textarea.component';
     FooterComponent,
     RadiofieldComponent,
     TextfieldComponent,
-    TextareaComponent
+    TextareaComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule
