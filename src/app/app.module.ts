@@ -10,6 +10,9 @@ import { RadiofieldComponent } from './radiofield/radiofield.component';
 import { TextfieldComponent } from './textfield/textfield.component';
 import { TextareaComponent } from './textarea/textarea.component';
 import { TableComponent } from './table/table.component';
+import { CoursecardsComponent } from './coursecards/coursecards.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { TableComponent } from './table/table.component';
     RadiofieldComponent,
     TextfieldComponent,
     TextareaComponent,
-    TableComponent
+    TableComponent,
+    CoursecardsComponent,
+    BrowserAnimationsModule
   ],
   imports: [
     BrowserModule
