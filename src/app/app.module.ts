@@ -1,35 +1,41 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { ButtonComponent } from './button/button.component';
-import { ComboComponent } from './combo/combo.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { RadiofieldComponent } from './radiofield/radiofield.component';
-import { TextfieldComponent } from './textfield/textfield.component';
-import { TextareaComponent } from './textarea/textarea.component';
-import { TableComponent } from './table/table.component';
 import { CoursecardsComponent } from './coursecards/coursecards.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { AppRoutingModule } from './/app-routing.module';
+import {MatButtonModule, MatMenuModule} from '@angular/material';
+import { BlueStripComponent } from './blue-strip/blue-strip.component';
+import { OnlineTrainingComponent } from './online-training/online-training.component';
+import { ClrTrainingComponent } from './clr-training/clr-training.component';
+import { CorTrainingComponent } from './cor-training/cor-training.component';
+import { ItConsultComponent } from './it-consult/it-consult.component';
+import { ItDevComponent } from './it-dev/it-dev.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent,
-    ComboComponent,
     HeaderComponent,
     FooterComponent,
-    RadiofieldComponent,
-    TextfieldComponent,
-    TextareaComponent,
-    TableComponent,
     CoursecardsComponent,
-    BrowserAnimationsModule
+    AboutUsComponent,
+    BlueStripComponent,
+    OnlineTrainingComponent,
+    ClrTrainingComponent,
+    CorTrainingComponent,
+    ItConsultComponent,
+    ItDevComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

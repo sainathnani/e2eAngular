@@ -1,3 +1,15 @@
-<p>
-  header works!
-</p>
+<app-blue-strip></app-blue-strip>
+<div>
+  <button mat-raised-button routerLink="/aboutus" name="aboutus">About Us</button>
+  <button mat-raised-button [matMenuTriggerFor]="services">Services</button>
+  <mat-menu #services="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="training" >IT Training</button>
+    <button mat-menu-item routerLink="/itcon">IT Consulting</button>
+    <button mat-menu-item routerLink="/itdev">IT Development</button>
+  </mat-menu>
+  <mat-menu #training="matMenu">
+    <button mat-menu-item routerLink="/onlinetr" >Online Training</button>
+    <button mat-menu-item routerLink="/clrtr">Class Room Training</button>
+    <button mat-menu-item routerLink="/cortr">Corporate Training</button>
+  </mat-menu>
+</div>
