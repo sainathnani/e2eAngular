@@ -14,6 +14,8 @@ import { ClrTrainingComponent } from './clr-training/clr-training.component';
 import { CorTrainingComponent } from './cor-training/cor-training.component';
 import { ItConsultComponent } from './it-consult/it-consult.component';
 import { ItDevComponent } from './it-dev/it-dev.component';
+import { HomeComponent } from './home/home.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -28,14 +30,16 @@ import { ItDevComponent } from './it-dev/it-dev.component';
     ClrTrainingComponent,
     CorTrainingComponent,
     ItConsultComponent,
-    ItDevComponent
+    ItDevComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
