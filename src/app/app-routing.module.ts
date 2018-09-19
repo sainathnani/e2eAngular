@@ -15,7 +15,8 @@ const routes: Routes = [
   {path: 'cortr', component: CorTrainingComponent},
   {path: 'itcon', component: ItConsultComponent},
   {path: 'itdev', component: ItDevComponent},
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 
 ];
 @NgModule({
