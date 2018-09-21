@@ -7,7 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CoursecardsComponent } from './coursecards/coursecards.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppRoutingModule } from './/app-routing.module';
-import {MatButtonModule, MatMenuModule} from '@angular/material';
+import {MatButtonModule, MatMenuModule, MatCardModule} from '@angular/material';
 import { BlueStripComponent } from './blue-strip/blue-strip.component';
 import { OnlineTrainingComponent } from './online-training/online-training.component';
 import { ClrTrainingComponent } from './clr-training/clr-training.component';
@@ -39,7 +39,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     MatButtonModule,
     MatMenuModule,
-    NgbModule
+    NgbModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
