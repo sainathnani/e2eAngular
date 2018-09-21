@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent {
 
-  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  images = [1, 2, 3].map(() => `https://picsum.photos/1500/800?random&t=${Math.random()}`);
 
 }
