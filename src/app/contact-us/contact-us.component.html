@@ -1,0 +1,52 @@
+<div style="width: 100%; display: table;">
+  <div style="display: table-row">
+    <div style="width: 50%; display: table-cell;">
+      Contact Us
+      <p>LIG-648 (1st FLOOR), ROAD NO #5,</p>
+      <p>NEAR MALABAR GOLD SHOP,</p>
+      <p> KPHB COLONY, KUKATPALLY,</p>
+      <p>Hyderabad-500072.</p>
+
+    </div>
+    <div style=" width: 50%;display: table-cell;">
+      <form #contactusForm="ngForm" [formGroup]="queryForm" (ngSubmit)="submitQuery(contactusForm)">
+      <table style="width: 100%">
+        <tr>
+          <th> Have any queries ?</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <mat-form-field style="width: 100%">
+              <input matInput placeholder="Name" name="name" formControlName="name">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field  style="width: 100%">
+              <input matInput type="email" placeholder="Email" name="email" formControlName="email">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field  style="width: 100%">
+              <input  matInput placeholder="Mobile" name="mobile" formControlName="mobile" >
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <mat-form-field style="width: 100%">
+              <textarea matInput placeholder="Message"
+                        name="message"  formControlName="message"></textarea>
+            </mat-form-field>
+          </td>
+        </tr>
+
+        <tr align="center">
+          <button type="submit" mat-raised-button color="primary" [disabled]="!queryForm.valid" >Submit</button>
+        </tr>
+      </table>
+      </form>
+    </div>
+  </div>
+</div>

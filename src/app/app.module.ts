@@ -7,7 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CoursecardsComponent } from './coursecards/coursecards.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppRoutingModule } from './/app-routing.module';
-import {MatButtonModule, MatMenuModule, MatCardModule} from '@angular/material';
+import {MatButtonModule, MatMenuModule, MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import { BlueStripComponent } from './blue-strip/blue-strip.component';
 import { OnlineTrainingComponent } from './online-training/online-training.component';
 import { ClrTrainingComponent } from './clr-training/clr-training.component';
@@ -16,6 +16,9 @@ import { ItConsultComponent } from './it-consult/it-consult.component';
 import { ItDevComponent } from './it-dev/it-dev.component';
 import { HomeComponent } from './home/home.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,7 +34,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     CorTrainingComponent,
     ItConsultComponent,
     ItDevComponent,
-    HomeComponent
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,12 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     MatButtonModule,
     MatMenuModule,
     NgbModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
