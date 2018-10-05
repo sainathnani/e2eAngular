@@ -36,7 +36,8 @@ export class ContactUsComponent implements OnInit {
       ]),
 
       'message': new FormControl(this.query.message, [
-        Validators.maxLength(255)
+        Validators.maxLength(255),
+        Validators.required
       ])
 
     });
@@ -51,6 +52,12 @@ export class ContactUsComponent implements OnInit {
           contactusForm.resetForm();
         } else {
           alert(res.errorDesc);
+        }
+      },
+      error1 => {
+        console.log(error1);
+        if (!error1.ok) {
+          alert(error1.statusText + ' Please try again');
         }
       }
     );

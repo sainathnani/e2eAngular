@@ -30,6 +30,14 @@ const contact_us = new mongoose.Schema({
     type: String,
     required: true
   },
+  "createdDate": {
+    type: Date,
+    default: Date.now()
+  },
+  "status": {
+    type: String,
+    default: 'Open'
+  }
 })
 const Contact_Us = mongoose.model('Contact_Us',contact_us);
 module.exports  = Contact_Us;

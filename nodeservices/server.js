@@ -37,7 +37,7 @@ app.post(utils.getProperty('user_registration_url'),function(req,res){
   user_registration_api.dupCheck(req,res);
 })
 
-// -------------- post user registration ------------------>
+// -------------- post contact registration ------------------>
 
 app.put(utils.getProperty('contact_us_url'),function(req,res){
   contact_us_api.contactQuery(req,res);
