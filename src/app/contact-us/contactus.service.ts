@@ -12,6 +12,6 @@ export class ContactusService {
   constructor(private http: HttpClient) { }
 
   putContactus(contactus: Queries): Observable<Baseresponse> {
-     return this.http.put<Baseresponse>('http://localhost:3010/user/contactus', contactus);
+     return this.http.put<Baseresponse>('http://localhost:3010/contactusroutes/user/contactus', contactus);
   }
 }
