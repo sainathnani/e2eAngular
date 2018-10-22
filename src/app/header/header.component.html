@@ -1,10 +1,10 @@
 <app-blue-strip></app-blue-strip>
-<div>
-  <input type="image" src="../assets/E2ELogo.png" width="200px" height="200px">
-  <button mat-raised-button routerLink="/aboutus" name="aboutus">About Us</button>
-  <button mat-raised-button routerLink="/home" name="aboutus">Home</button>
-  <button mat-raised-button routerLink="/contactus" name="contactus">Contact Us</button>
-  <button mat-raised-button [matMenuTriggerFor]="services">Services</button>
+<div class="container-fluid e2e-fixed-headercls">
+  <input type="image" src="../assets/E2ELogo-min.png" width="200px" height="70px">
+  <button class = "e2e-header-button-flat" mat-button routerLink="/home" name="aboutus">Home</button>
+  <button class = "e2e-header-button-flat" mat-button routerLink="/aboutus" name="aboutus">About Us</button>  
+  <button class = "e2e-header-button-flat" mat-button routerLink="/contactus" name="contactus">Contact Us</button>
+  <button class = "e2e-header-button-flat" mat-button [matMenuTriggerFor]="services">Services</button>
   <mat-menu #services="matMenu">
     <button mat-menu-item [matMenuTriggerFor]="training" >IT Training</button>
     <button mat-menu-item routerLink="/itcon">IT Consulting</button>

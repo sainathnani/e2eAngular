@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+$primary-color: #45415E;
+$secondary-color: #2B4251;
+$secondary-color-shade: #5B7D87;
+$tertiary-color: #91B3BC;
+$black-shade: #2E323C;
+$white-color: #FFFFFF;
+$black-color: #000000;
+$padding-xs: 5px 10px;
+$font-size: 1em;
+$margin-top: 20px;
+$margin-bottom: 20px;
+$margin-left: 20px;
+$margin-right: 20px;
+$padding-top: 20px;
+$padding-bottom: 20px;
+$padding-right: 20px;
+$padding-left: 20px;
+$margin: 20px;
+$padding: 20px;
+$alt-primary-color: #3E3E3B;
+$alt-secondary-color: #4C586F;
+$alt-secondary-color-shade: #A2AAB0;
+$alt-tertiary-color: #CBC5C1;
+$alt-white-shade: #EBECED;
+  
+body {
+  	font-size: $font-size;
+}
+  
+button:focus {
+    outline: 5px auto $secondary-color !important;
+}
+
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+	background: $secondary-color !important;
+}
+
+button.mat-button {
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 600;
+    color: $secondary-color;
+}

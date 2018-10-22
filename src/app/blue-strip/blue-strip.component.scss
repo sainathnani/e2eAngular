@@ -1,0 +1,11 @@
+@import "../../styles.scss";
+
+.e2e-bluestrip-container {
+	background: $primary-color;
+	text-align: end;
+}
+.e2e-bluestrip-container span {
+	color: $white-color;
+	padding: $padding-xs;
+	font-size: 75%;
+}

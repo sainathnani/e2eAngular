@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+
+.container-fluid.e2e-footer-containercls {
+    padding: 0;
+}
+
+.e2e-footer-part-one {
+	background: $secondary-color;
+	color: $white-color;
+}
+
+.e2e-footer-part-two {
+	background: $secondary-color-shade;
+	color: $white-color;
+}
