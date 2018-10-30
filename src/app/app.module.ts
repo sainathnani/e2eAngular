@@ -7,7 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CoursecardsComponent } from './coursecards/coursecards.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppRoutingModule } from './/app-routing.module';
-import {MatButtonModule, MatMenuModule, MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatButtonModule, MatMenuModule, MatCardModule, MatFormFieldModule, MatInputModule, MatToolbarModule} from '@angular/material';
 import { BlueStripComponent } from './blue-strip/blue-strip.component';
 import { OnlineTrainingComponent } from './online-training/online-training.component';
 import { ClrTrainingComponent } from './clr-training/clr-training.component';
@@ -44,6 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatMenuModule,
     NgbModule,
+    MatToolbarModule,
     MatCardModule,
     MatInputModule,
     FormsModule,
