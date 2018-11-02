@@ -1,6 +1,7 @@
-<ngb-carousel *ngFor="let image of images">
-  <ng-template ngbSlide>
+<ngb-carousel >
+  <ng-template ngbSlide *ngFor="let image of images">
     <img  width="1600px" height="500px" src="http://localhost:3010/file/{{image.fileId}}/banners" alt="Random first slide">
+
     <div class="carousel-caption">
      <!-- <h3>First slide label</h3>
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
@@ -12,6 +13,8 @@
   <mat-toolbar> Course details </mat-toolbar>
 
   <div class="col-sm-3"  *ngFor="let course of courses">
-    <div> <app-coursecards [course]="course"></app-coursecards></div></div>
+    <div> <app-coursecards [course]="course"></app-coursecards>
+    </div>
+  </div>
 
 </div>

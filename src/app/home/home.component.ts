@@ -10,9 +10,9 @@ import {Banners} from '../models/Banners';
 })
 export class HomeComponent implements OnInit {
 
- // images = [1, 2, 3].map(() => `https://picsum.photos/1500/500?random&t=${Math.random()}`);
+  // images = [1, 2, 3].map(() => `https://picsum.photos/1500/500?random&t=${Math.random()}`);
 
-  images: Banners[] = [];
+   images: Banners[] = [];
   constructor(private getCourses: GetAllCoursesService) { }
 
   courses: Courses[] = [];
