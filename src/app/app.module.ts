@@ -19,6 +19,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     ItConsultComponent,
     ItDevComponent,
     HomeComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    CoursedetailsComponent
   ],
   imports: [
     BrowserModule,

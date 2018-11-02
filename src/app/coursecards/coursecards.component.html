@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="example-card" routerLink="/details/{{course.courseName}}-{{course._id}}">
   <mat-card-header>
     <mat-card-title>{{course.courseName}}</mat-card-title>
   </mat-card-header>
@@ -9,7 +9,6 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+    <button mat-button >More</button>
   </mat-card-actions>
 </mat-card>

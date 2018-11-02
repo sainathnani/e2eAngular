@@ -8,6 +8,7 @@ import {ItConsultComponent} from './it-consult/it-consult.component';
 import {ItDevComponent} from './it-dev/it-dev.component';
 import {HomeComponent} from './home/home.component';
 import {ContactUsComponent} from './contact-us/contact-us.component';
+import {CoursedetailsComponent} from './coursedetails/coursedetails.component';
 
 const routes: Routes = [
   {path: 'aboutus', component: AboutUsComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'itdev', component: ItDevComponent},
   {path: 'home', component: HomeComponent},
   {path: 'contactus', component: ContactUsComponent},
+  {path: 'details/:courseId', component: CoursedetailsComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: HomeComponent }
 

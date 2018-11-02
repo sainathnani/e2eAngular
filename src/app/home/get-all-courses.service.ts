@@ -18,6 +18,4 @@ export class GetAllCoursesService {
   getAllBanners(): Observable<Banners[]> {
     return this.http.get<Banners[]>('http://localhost:3010/file/get/allfiles/banners');
   }
-
-
 }

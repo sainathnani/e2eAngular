@@ -13,4 +13,7 @@ export class CoursecardsComponent implements OnInit {
   ngOnInit() {
   }
 
+  getInfo(): void {
+    console.log(this.course);
+  }
 }
