@@ -1,0 +1,7 @@
+<div *ngIf = "course">
+<p>
+  {{ course && course.benefits &&  course.features.certification}}
+</p>
+<img width="100px" height="200px" src="http://localhost:3010/file/{{course && course.courseImage}}/fs" alt="Photo of {{course && course.courseName}}">
+
+</div>
