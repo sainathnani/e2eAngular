@@ -7,7 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CoursecardsComponent } from './coursecards/coursecards.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppRoutingModule } from './/app-routing.module';
-import {MatButtonModule, MatMenuModule, MatCardModule, MatFormFieldModule, MatInputModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatMenuModule, MatCardModule, MatFormFieldModule, MatInputModule, MatToolbarModule,
+  MatListModule} from '@angular/material';
 import { BlueStripComponent } from './blue-strip/blue-strip.component';
 import { OnlineTrainingComponent } from './online-training/online-training.component';
 import { ClrTrainingComponent } from './clr-training/clr-training.component';
@@ -20,6 +21,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { CoursedetailsComponent } from './coursedetails/coursedetails.component'
     ItDevComponent,
     HomeComponent,
     ContactUsComponent,
-    CoursedetailsComponent
+    CoursedetailsComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { CoursedetailsComponent } from './coursedetails/coursedetails.component'
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
+    MatListModule,
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,

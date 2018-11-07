@@ -1,7 +1,29 @@
-<div *ngIf = "course">
-<p>
-  {{ course && course.benefits &&  course.features.certification}}
+<div *ngIf = "course" class="coursedetails-cardmaincontainercls">
+<p class="coursedetails-titlecoursecls">
+  {{course.courseName}}
 </p>
-<img width="100px" height="200px" src="http://localhost:3010/file/{{course && course.courseImage}}/fs" alt="Photo of {{course && course.courseName}}">
-
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <img width="200px" height="200px" src="http://localhost:3010/file/{{course && course.courseImage}}/fs" alt="Photo of {{course && course.courseName}}">
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <div class="row padding">
+        <p class="col-sm-12 col-md-9">{{course.benefits.reason}}</p>
+          <p class="col-sm-6 col-md-5">{{course.benefits.benefit1}}</p>
+          <p class="col-sm-6 col-md-5">{{course.benefits.benefit2}}</p>
+          <p class="col-sm-6 col-md-5">{{course.benefits.benefit3}}</p>
+          <p class="col-sm-6 col-md-5"></p>
+          <ngb-rating class="col-sm-6 col-md-5" [readonly]="true" [rate]="course.reviews.score" [max]="5"></ngb-rating>
+          <p class="col-sm-6 col-md-5">Course Completion Rate - {{course.reviews.rate}} % {{course.reviews.total_reviews}} + Reviews</p>
+      </div>
+    </div>
+    <div class="col-md-12 coursedetails-titlecoursecls">
+      {{course.aboutCourse}}
+    </div>
+    <p class="col-md-12 padding-xs">Features</p>
+    <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.assignments}}</p>
+    <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.instructorLedSessions}}</p>
+    <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.certification}}</p>
+    <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.realLifeCaseStudies}}</p>
+  </div>
 </div>

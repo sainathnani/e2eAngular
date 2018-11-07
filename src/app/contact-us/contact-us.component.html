@@ -1,14 +1,14 @@
-<div style="width: 100%; display: table;">
-  <div style="display: table-row">
-    <div style="width: 50%; display: table-cell;">
-      Contact Us
+<div class="padding-xlarge">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Our Address</p>
       <p>LIG-648 (1st FLOOR), ROAD NO #5,</p>
       <p>NEAR MALABAR GOLD SHOP,</p>
       <p> KPHB COLONY, KUKATPALLY,</p>
       <p>Hyderabad-500072.</p>
 
     </div>
-    <div style=" width: 50%;display: table-cell;">
+    <div class="col-sm-6" style="display: table-cell;">
       <form #contactusForm="ngForm" [formGroup]="queryForm" (ngSubmit)="submitQuery(contactusForm)">
       <table style="width: 100%">
         <tr>
@@ -44,7 +44,7 @@
         </tr>
 
         <tr align="center">
-          <button type="submit" mat-raised-button color="primary" [disabled]="!queryForm.valid" >Submit</button>
+          <button class="primary-button" [disabled]="!queryForm.valid" >Submit</button>
         </tr>
       </table>
       </form>

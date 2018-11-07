@@ -3,6 +3,7 @@
 .e2e-bluestrip-container {
 	background: $primary-color;
 	text-align: end;
+  padding: $padding-xs;
 }
 .e2e-bluestrip-container span {
 	color: $white-color;

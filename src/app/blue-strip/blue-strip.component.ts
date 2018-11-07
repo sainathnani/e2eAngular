@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-blue-strip',
@@ -9,6 +9,8 @@ export class BlueStripComponent implements OnInit {
 
   constructor() { }
 
+  @Input()
+  info: String = '';
   ngOnInit() {
   }
 

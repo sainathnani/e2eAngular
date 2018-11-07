@@ -9,7 +9,9 @@ $tertiary-color: #91B3BC;
 $black-shade: #2E323C;
 $white-color: #FFFFFF;
 $black-color: #000000;
+$transparent-color: transparent;
 $padding-xs: 5px 10px;
+$padding-small: 10px;
 $font-size: 1em;
 $margin-top: 20px;
 $margin-bottom: 20px;
@@ -21,14 +23,21 @@ $padding-right: 20px;
 $padding-left: 20px;
 $margin: 20px;
 $padding: 20px;
+$padding-xlarge: 40px;
 $alt-primary-color: #3E3E3B;
 $alt-secondary-color: #4C586F;
 $alt-secondary-color-shade: #A2AAB0;
 $alt-tertiary-color: #CBC5C1;
 $alt-white-shade: #EBECED;
+$default-fontfamily: 'Lato', sans-serif;
+$emphasised-fontfamily: 'Raleway', sans-serif;
+
   
 body {
-  	font-size: $font-size;
+  	font-size: $font-size !important;
+    color: $secondary-color !important;
+    background: $alt-white-shade !important;
+    font-family: $default-fontfamily !important;
 }
   
 button:focus {
@@ -44,4 +53,22 @@ button.mat-button {
     font-size: 100%;
     font-weight: 600;
     color: $secondary-color;
+}
+
+.padding {
+  padding: $padding;
+}
+
+.padding-xlarge {
+  padding: $padding-xlarge;
+}
+
+.padding-xs {
+  padding: $padding-xs;
+}
+
+.primary-button {
+  background: $primary-color;
+  color: $white-color;
+  padding: $padding-xs;
 }

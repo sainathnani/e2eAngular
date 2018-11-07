@@ -1,0 +1,12 @@
+
+<div *ngIf="allCategories" class="row" >
+<div *ngFor="let cat of allCategories" class="col-sm-3">
+<mat-card>
+  <mat-card-header>
+    <mat-card-title style="font-weight: bold">{{cat.category}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image width="100px" height="200px" src="http://localhost:3010/file/{{cat.categoryImage}}/fs">
+
+</mat-card>
+</div>
+</div>
