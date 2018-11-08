@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Categories} from '../models/Categories';
 import {CategoryServiceService} from './category-service.service';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-categories',
@@ -10,7 +11,6 @@ import {CategoryServiceService} from './category-service.service';
 export class CategoriesComponent implements OnInit {
 
   constructor(private catService: CategoryServiceService) { }
-
   allCategories: Categories[] = [];
   ngOnInit() {
     this.getAllCategories();
@@ -20,5 +20,9 @@ export class CategoriesComponent implements OnInit {
   this.catService.getCategories().subscribe(res => {
     this.allCategories = res;
   });
+  }
+
+  constructImageUrl(imageId): String {
+    return environment.constructUrl(environment.categoryImage) + imageId + environment.fssource;
   }
 }

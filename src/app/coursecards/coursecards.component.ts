@@ -1,5 +1,6 @@
 import {Component, Injectable, Input, OnInit} from '@angular/core';
 import {Courses} from '../models/Courses';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-coursecards',
@@ -15,5 +16,9 @@ export class CoursecardsComponent implements OnInit {
 
   getInfo(): void {
     console.log(this.course);
+  }
+
+  constructImageUrl(imageId): String {
+    return environment.constructUrl(environment.categoryImage) + imageId + environment.fssource;
   }
 }

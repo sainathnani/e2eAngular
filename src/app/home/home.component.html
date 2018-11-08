@@ -1,6 +1,6 @@
 <ngb-carousel >
   <ng-template ngbSlide *ngFor="let image of images">
-    <img width="1600px" height="500px" src="http://localhost:3010/file/{{image.fileId}}/banners" alt="Random first slide">
+    <img width="1600px" height="500px" [src]="constructImageUrl(image.fileId)" alt="Random first slide">
 
     <div class="carousel-caption">
     </div>

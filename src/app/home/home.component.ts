@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {GetAllCoursesService} from './get-all-courses.service';
 import {Courses} from '../models/Courses';
 import {Banners} from '../models/Banners';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,6 @@ import {Banners} from '../models/Banners';
 })
 export class HomeComponent implements OnInit {
 
-  // images = [1, 2, 3].map(() => `https://picsum.photos/1500/500?random&t=${Math.random()}`);
 
    images: Banners[] = [];
   constructor(private getCourses: GetAllCoursesService) { }
@@ -26,5 +26,9 @@ export class HomeComponent implements OnInit {
       console.log(res);
       this.images = res;
     });
+  }
+
+  constructImageUrl(imageId): String {
+    return environment.constructUrl(environment.categoryImage) + imageId + environment.bannersource;
   }
 }

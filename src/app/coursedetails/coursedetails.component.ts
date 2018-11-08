@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {GetcourseService} from './getcourse.service';
 import {Courses} from '../models/Courses';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-coursedetails',
@@ -24,6 +25,9 @@ export class CoursedetailsComponent implements OnInit {
       this.course =  res;
       console.log(this.course);
     });
+  }
+  constructImageUrl(imageId): String {
+    return environment.constructUrl(environment.categoryImage) + imageId + environment.fssource;
   }
 
 }

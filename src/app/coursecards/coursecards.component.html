@@ -2,7 +2,7 @@
   <mat-card-header>
     <mat-card-title>{{course.courseName}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image width="100px" height="200px" src="http://localhost:3010/file/{{course.courseImage}}/fs" alt="Photo of {{course.courseName}}">
+  <img mat-card-image width="100px" height="200px" [src]="constructImageUrl(course.courseImage)" alt="Photo of {{course.courseName}}">
   <mat-card-content>
     <p>
      {{course.aboutCourse}}
