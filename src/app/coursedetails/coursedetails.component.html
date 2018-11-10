@@ -30,4 +30,30 @@
     <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.certification}}</p>
     <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.realLifeCaseStudies}}</p>
   </div>
+
+
+  <div>
+    <mat-toolbar class="home-toolbarcls"> Batches </mat-toolbar>
+    <mat-table style="width: 100%" mat-table [dataSource]="batSource" >
+      <ng-container matColumnDef="startDate">
+        <mat-header-cell *matHeaderCellDef> Start Date</mat-header-cell>
+        <mat-cell *matCellDef="let batch">{{batch.startDate | date: 'dd/MM/yyyy'}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="courseTime">
+        <mat-header-cell *matHeaderCellDef> Course Time</mat-header-cell>
+        <mat-cell *matCellDef="let batch">{{batch.courseTime}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="duration">
+        <mat-header-cell *matHeaderCellDef> Duration (Days)</mat-header-cell>
+        <mat-cell *matCellDef="let batch">{{batch.duration}} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayColumns;"></mat-row>
+    </mat-table>
+  </div>
+
+
 </div>

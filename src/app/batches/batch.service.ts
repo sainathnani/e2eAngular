@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Batches} from '../models/Batches';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,6 @@ export class BatchService {
 
 
   getAllBatches(): Observable<Batches[]> {
-    return this.http.get<Batches[]>('http://localhost:3010/batch/get/batches');
+    return this.http.get<Batches[]>(environment.constructUrl(environment.getAllBatches));
   }
 }
