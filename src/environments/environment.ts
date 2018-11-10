@@ -14,6 +14,7 @@ export const environment = {
   getCourseById: 'courseroute/course/',
   getAllCourses: 'courseroute/courses',
   getAllBanners: 'file/get/allfiles',
+  getCourseContent: 'courseroute/courseContent/',
   constructUrl : function(input) {
     return this.apiUrl + input;
   }

@@ -1,10 +1,11 @@
-<div *ngIf = "course" class="coursedetails-cardmaincontainercls">
-<p class="coursedetails-titlecoursecls">
-  {{course.courseName}}
-</p>
+<div *ngIf = "course" class="coursedetails-cardmaincontainercls coursedetails-backgroundcls">
+  <mat-toolbar class="home-toolbarcls">
+    {{course.courseName}}
+  </mat-toolbar>
   <div class="row">
     <div class="col-sm-6 col-md-4">
       <img width="200px" height="200px" [src]="constructImageUrl(course.courseImage)" alt="Photo of {{course && course.courseName}}">
+      <button mat-raised-button (click)="getCourseContent(course._id)" >Get Content</button>
     </div>
     <div class="col-sm-12 col-md-8">
       <div class="row padding">
@@ -13,14 +14,17 @@
           <p class="col-sm-6 col-md-5">{{course.benefits.benefit2}}</p>
           <p class="col-sm-6 col-md-5">{{course.benefits.benefit3}}</p>
           <p class="col-sm-6 col-md-5"></p>
-          <ngb-rating class="col-sm-6 col-md-5" [readonly]="true" [rate]="course.reviews.score" [max]="5"></ngb-rating>
-          <p class="col-sm-6 col-md-5">Course Completion Rate - {{course.reviews.rate}} % {{course.reviews.total_reviews}} + Reviews</p>
       </div>
     </div>
-    <div class="col-md-12 coursedetails-titlecoursecls">
+    <mat-toolbar class="home-toolbarcls">
+      About
+    </mat-toolbar>
+    <div class="col-md-12">
       {{course.aboutCourse}}
     </div>
-    <p class="col-md-12 padding-xs">Features</p>
+    <mat-toolbar class="home-toolbarcls">
+      Features
+    </mat-toolbar>
     <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.assignments}}</p>
     <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.instructorLedSessions}}</p>
     <p class="col-sm-6 col-md-4 aboutcoursetitlecls">{{course.features.certification}}</p>

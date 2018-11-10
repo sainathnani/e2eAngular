@@ -1,6 +1,6 @@
-<mat-card class="example-card" routerLink="/details/{{course.courseName}}-{{course._id}}">
+<mat-card routerLink="/details/{{course.courseName}}-{{course._id}}">
   <mat-card-header>
-    <mat-card-title>{{course.courseName}}</mat-card-title>
+    <mat-card-title class="bigtextcls">{{course.courseName}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image width="100px" height="200px" [src]="constructImageUrl(course.courseImage)" alt="Photo of {{course.courseName}}">
   <mat-card-content>
@@ -9,6 +9,6 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button >More</button>
+    <button mat-button >Know More</button>
   </mat-card-actions>
 </mat-card>

@@ -30,4 +30,8 @@ export class CoursedetailsComponent implements OnInit {
     return environment.constructUrl(environment.categoryImage) + imageId + environment.fssource;
   }
 
+  getCourseContent(courseId): void {
+    window.open(environment.constructUrl(environment.getCourseContent) + courseId);
+  }
+
 }

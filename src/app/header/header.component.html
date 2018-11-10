@@ -1,8 +1,9 @@
 <app-blue-strip></app-blue-strip>
 <div class="container-fluid e2e-fixed-headercls">
   <input routerLink="/home" type="image" src="../assets/E2ELogo.png" width="200px" height="70px">
-  <button class = "e2e-header-button-flat" mat-button routerLink="/home" name="aboutus">Home</button>
+  <button class = "e2e-header-button-flat" mat-button routerLink="/home" name="home">Home</button>
   <button class = "e2e-header-button-flat" mat-button routerLink="/aboutus" name="aboutus">About Us</button>
+  <button class = "e2e-header-button-flat" mat-button routerLink="/batches" name="batches">Batches</button>
   <button class = "e2e-header-button-flat" mat-button routerLink="/contactus" name="contactus">Contact Us</button>
   <button class = "e2e-header-button-flat" mat-button [matMenuTriggerFor]="services">Services</button>
   <mat-menu #services="matMenu">
