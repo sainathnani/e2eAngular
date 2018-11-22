@@ -75,9 +75,14 @@ button.mat-button {
 
 .backgroundcls {
   background-color: $white-color;
+  margin-top: $padding;
+  margin-bottom: $padding;
 }
 
 .bigtextcls {
   font-weight: bold !important;
   font-size: large !important;
+}
+.fa {
+  padding-right: $padding-small;
 }

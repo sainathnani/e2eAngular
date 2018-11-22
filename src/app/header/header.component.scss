@@ -2,5 +2,9 @@
 
 .e2e-header-button-flat {
 	vertical-align: top;
-	margin-top: $margin-top;
+	margin-top: 45px;
+}
+
+.container-fluid.e2e-fixed-headercls {
+  background-color: $white-color;
 }
