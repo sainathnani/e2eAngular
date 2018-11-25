@@ -61,3 +61,14 @@
 .aboutcoursecontentcls {
   padding: $padding;
 }
+.featuretitlecls{
+	font-family: $emphasised-fontfamily;
+	font-weight: 600;
+	padding-bottom: $padding;
+}
+.featuretitlecls:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: normal;
+}
