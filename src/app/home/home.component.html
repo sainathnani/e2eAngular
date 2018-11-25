@@ -1,4 +1,4 @@
-<ngb-carousel >
+<ngb-carousel class = "container-fluid home-carouselclass">
   <ng-template ngbSlide *ngFor="let image of images">
     <img width="1600px" height="500px" [src]="constructImageUrl(image.fileId)" alt="Random first slide">
 
@@ -8,16 +8,19 @@
 
 </ngb-carousel>
 
-<div class="row home-cardmaincontainercls">
-  <mat-toolbar class="home-toolbarcls"> Popular Courses </mat-toolbar>
-  <div class="col-sm-4" *ngFor="let course of courses">
-    <div> <app-coursecards [course]="course"></app-coursecards>
+<div class="container-fluid home-cardmaincontainercls">
+  <div class="home-cardcontentcontainercls row">
+    <mat-toolbar class="home-toolbarcls"><i class="fa fa-fire" aria-hidden="true"></i>Popular Courses </mat-toolbar>
+    <div class="col-xs-12 col-sm-6 col-md-4 home-coursecardcls" *ngFor="let course of courses">
+      <div> <app-coursecards [course]="course"></app-coursecards>
+      </div>
     </div>
   </div>
-
 </div>
 
-<div class="row home-cardmaincontainercls" >
-  <mat-toolbar class="home-toolbarcls">Popular Categories</mat-toolbar>
-  <app-categories></app-categories>
+<div class="container-fluid home-cardmaincontainercls" >
+  <div class="home-cardcontentcontainercls row">
+  <mat-toolbar class="home-toolbarcls"><i class="fa fa-fire" aria-hidden="true"></i>Popular Categories</mat-toolbar>
+    <app-categories style="width: 100%;"></app-categories>
+  </div>
 </div>

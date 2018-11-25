@@ -1,6 +1,8 @@
-<div class="container-fluid">
-  <mat-toolbar class="home-toolbarcls"> Batches </mat-toolbar>
-<mat-table style="width: 100%" mat-table [dataSource]="batSource" >
+<div class="padding-xlarge backgroundcls container">
+  <img src="../../assets/batches.jpg" height="200" width = "100%" style = "margin-bottom: 20px;">
+  <p class = "batchestitlecls">Batches</p>
+
+  <mat-table style="width: 100%" mat-table [dataSource]="batSource" >
   <ng-container matColumnDef="courseName">
     <mat-header-cell *matHeaderCellDef> Course Name</mat-header-cell>
     <mat-cell *matCellDef="let batch">{{batch.selectedCourse}}</mat-cell>
@@ -16,7 +18,7 @@
   </ng-container>
 
   <ng-container matColumnDef="duration">
-    <mat-header-cell *matHeaderCellDef> Duration (Days)</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef> Duration (Hours)</mat-header-cell>
     <mat-cell *matCellDef="let batch">{{batch.duration}} </mat-cell>
   </ng-container>
 

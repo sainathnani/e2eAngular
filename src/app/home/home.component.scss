@@ -1,8 +1,25 @@
 @import "../../styles.scss";
 
 .home-toolbarcls {
-  background: $transparent-color;
+  background: $secondary-color-shade;
+  color: $white-color;
+  box-shadow: 1px 1px 3px rgba(91,125,135,0.7);
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: $padding-small;
 }
+
 .home-cardmaincontainercls {
   padding: $padding-xlarge;
+}
+.home-carouselclass.container-fluid {
+  padding: $padding-xlarge;
+}
+.home-coursecardcls {
+  padding: $padding;
+}
+.home-cardcontentcontainercls {
+  background: $white-color;
+}
+.home-coursecardcls > div {
+  box-shadow: 0 0 3px #5B7D87;
 }

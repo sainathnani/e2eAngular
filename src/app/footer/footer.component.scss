@@ -7,9 +7,28 @@
 .e2e-footer-part-one {
 	background: $secondary-color;
 	color: $white-color;
+	padding: $padding;
 }
 
 .e2e-footer-part-two {
 	background: $secondary-color-shade;
 	color: $white-color;
+	padding: $padding;
+}
+
+.e2e-footer-part-one > div, .e2e-footer-part-two > div{
+	vertical-align: top;
+}
+.followsocailmediaiconcls {
+	display: inline-block;
+	width: 100%;
+}
+.followsocailmediaiconcls {
+	text-align: right;
+}
+.followsocailmediaiconcls span {
+	vertical-align: top;
+}
+.followsocailmediaiconcls i, .followsocailmediaiconcls span {
+    margin-right: 20px;
 }

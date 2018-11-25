@@ -1,12 +1,15 @@
 
-<div *ngIf="allCategories" class="row" >
-<div *ngFor="let cat of allCategories" class="col-sm-3">
-<mat-card>
-  <mat-card-header>
-    <mat-card-title class="bigtextcls">{{cat.category}}</mat-card-title>
-  </mat-card-header>
-  <img mat-card-image width="100px" height="200px" [src] = "constructImageUrl(cat.categoryImage)">
-
-</mat-card>
-</div>
+<div *ngIf="allCategories" class="container-fluid" style="padding: 0;" >
+  <div class="row" style="margin: 0;">
+    <div *ngFor="let cat of allCategories" class="col-xs-12 col-sm-6 col-md-3 coursecategory-cardcls">
+      <div>
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title class="bigtextcls">{{cat.category}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image width="100px" height="200px" [src] = "constructImageUrl(cat.categoryImage)">
+        </mat-card>
+      </div>
+    </div>
+  </div>
 </div>

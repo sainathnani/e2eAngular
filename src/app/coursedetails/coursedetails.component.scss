@@ -10,6 +10,7 @@
 }
 .aboutcoursetitlecls {
   padding: $padding-xs;
+  display: inline-block;
 }
 
 .coursedetails-backgroundcls{
@@ -19,4 +20,55 @@
 
 .home-toolbarcls {
   background: $transparent-color;
+}
+.coursedetails-contentcontainercls {
+  background-color: $transparent-color;
+  padding: $padding-xlarge;
+}
+.home-toolbarcls {
+  background-color: $secondary-color-shade;
+  margin-bottom: $padding;
+  font-family: $emphasised-fontfamily;
+  color: $white-color;
+}
+.row.home-toolbarcls-rowmargin {
+  margin: 0;
+  padding: $padding;
+}
+.coursedetails-sectioncls {
+  box-shadow: 0 0 3px $secondary-color;
+  margin-bottom: $padding;
+  background: $white-color;
+}
+
+.downloadcontentbtn {
+  background: $secondary-color;
+  color: $white-color;
+  font-size: 125%;
+  box-shadow: 0 0 3px $primary-color;
+}
+.whythiscoursecls {
+  font-family: $emphasised-fontfamily;
+  font-size: 112.5%;
+  font-weight: 600;
+  display: inline-block;
+  color: $primary-color;
+}
+.whythiscoursecls i {
+  font-size: 125%;
+  padding-right: 5px;
+}
+.aboutcoursecontentcls {
+  padding: $padding;
+}
+.featuretitlecls{
+	font-family: $emphasised-fontfamily;
+	font-weight: 600;
+	padding-bottom: $padding;
+}
+.featuretitlecls:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: normal;
 }
