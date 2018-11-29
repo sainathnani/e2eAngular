@@ -10,6 +10,9 @@ export const environment = {
   getCourseById: 'courseroute/course/',
   getAllCourses: 'courseroute/courses',
   getAllBanners: 'file/get/allfiles',
+ getCourseContent: 'courseroute/courseContent/',
+  getAllBatches: 'batch/get/batches',
+  getBatchByCourse: 'batch/',
   constructUrl : function(input) {
     return this.apiUrl + input;
   }
