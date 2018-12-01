@@ -20,8 +20,7 @@ export class ContactUsComponent implements OnInit {
     this.queryForm = new FormGroup({
       'name': new FormControl(this.query.name, [
         Validators.required,
-        Validators.minLength(4),
-        Validators.maxLength(10)
+        Validators.minLength(4)
       ]),
       'email': new FormControl(this.query.email, [
         Validators.required,
