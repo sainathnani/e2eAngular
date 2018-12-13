@@ -12,7 +12,7 @@ export class BatchesComponent implements OnInit {
   constructor(private batchService: BatchService ) { }
 
   batSource: Batches[] = [];
-  displayColumns = ['courseName', 'startDate', 'courseTime', 'duration'];
+  displayColumns = ['courseName', 'startDate', 'courseTime', 'duration', 'faculty'];
   ngOnInit() {
     this.getAllBatches();
   }
