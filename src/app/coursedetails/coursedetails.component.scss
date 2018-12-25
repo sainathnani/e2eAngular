@@ -72,3 +72,9 @@
     padding-right: 10px;
     font-weight: normal;
 }
+
+@media only screen and (max-width: 768px) {
+	.coursedetails-contentcontainercls {
+		padding: 0;
+	}
+} 
