@@ -1,11 +1,12 @@
 <app-blue-strip></app-blue-strip>
+<nav style="position: sticky; top: 0;z-index: 2">
 <div class="container-fluid e2e-fixed-headercls">
-  <input routerLink="/home" type="image" src="../assets/E2ELogo.png" width="240px" height="120px">
-  <button class = "e2e-header-button-flat" mat-button routerLink="/home" name="home">Home</button>
-  <button class = "e2e-header-button-flat" mat-button routerLink="/aboutus" name="aboutus">About Us</button>
-  <button class = "e2e-header-button-flat" mat-button [matMenuTriggerFor]="services">Services</button>
-  <button class = "e2e-header-button-flat" mat-button routerLink="/batches" name="batches">New Batches</button>
-  <button class = "e2e-header-button-flat" mat-button routerLink="/contactus" name="contactus">Contact Us</button>
+  <img routerLink="/home" type="image" src="../assets/E2ELogo.png" width="240px" height="120px">
+  <a class = "e2e-header-button-flat" mat-button routerLink="/home" name="home">Home</a>
+  <a class = "e2e-header-button-flat" mat-button routerLink="/aboutus" name="aboutus">About Us</a>
+  <a class = "e2e-header-button-flat" mat-button [matMenuTriggerFor]="services">Services</a>
+  <a class = "e2e-header-button-flat" mat-button routerLink="/batches" name="batches">New Batches</a>
+  <a class = "e2e-header-button-flat" mat-button routerLink="/contactus" name="contactus">Contact Us</a>
   <mat-menu #services="matMenu">
     <button mat-menu-item [matMenuTriggerFor]="training" >IT Training</button>
     <button mat-menu-item routerLink="/itcon">IT Consulting</button>
@@ -17,3 +18,4 @@
     <button mat-menu-item routerLink="/cortr">Corporate Training</button>
   </mat-menu>
 </div>
+</nav>
