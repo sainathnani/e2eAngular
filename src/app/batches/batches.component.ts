@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {BatchService} from './batch.service';
 import {Batches} from '../models/Batches';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-batches',
@@ -9,7 +10,8 @@ import {Batches} from '../models/Batches';
 })
 export class BatchesComponent implements OnInit {
 
-  constructor(private batchService: BatchService ) { }
+  constructor(private batchService: BatchService,
+              public router: Router) { }
 
   batSource: Batches[] = [];
   displayColumns = ['courseName', 'startDate', 'courseTime', 'duration', 'faculty'];

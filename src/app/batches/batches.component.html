@@ -1,5 +1,7 @@
 <div class="padding backgroundcls container">
+  <div *ngIf="router.url != '/home'">
   <img src="../../assets/batches.jpg" height="200" width = "100%" style = "margin-bottom: 20px;">
+  </div>
   <p class = "batchestitlecls">New Batches</p>
 
   <mat-table style="width: 100%" mat-table [dataSource]="batSource" >
