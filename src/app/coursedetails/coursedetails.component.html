@@ -41,7 +41,7 @@
 
         <ng-container matColumnDef="courseTime">
           <mat-header-cell *matHeaderCellDef> Course Time</mat-header-cell>
-          <mat-cell *matCellDef="let batch">{{batch.courseTime}} </mat-cell>
+          <mat-cell *matCellDef="let batch">{{batch.startDate | date: 'h:mm a'}} </mat-cell>
         </ng-container>
 
         <ng-container matColumnDef="duration">
